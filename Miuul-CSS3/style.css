@@ -103,3 +103,33 @@
     -moz-line-clamp: 5;
     -moz-box-orient: vertical;
 }
+
+#miuul_a {
+    color: blueviolet;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#miuul_a:hover {
+    color: blueviolet;
+    background-color: black;
+    text-decoration: underline;
+}
+
+.miuul_width_height {
+    background-color: orange;
+    color: purple;
+    margin-top: 3px;
+    width: 100px;
+    height: 150px;
+}
+
+.miuul_width_height:hover {
+    background-color: purple;
+    color: orange;
+    cursor: pointer;
+    cursor: move;
+    cursor: text;
+}
+
