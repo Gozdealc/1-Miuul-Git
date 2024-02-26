@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom Project</title>
+</head>
+<body>
+<!-- Adım adım düşünürsek,
+Butona tıkladığımız da "subscribed" olması eğer öyleyse tıkladığımız da tekrar "subscribe" dönmesi gerekir.
+
+Butonun içinde ki metni alıyoruz, querySelector ile.
+Class tanımladık.
+
+Daha sonra butonun içinde ki ifadenin subscribe olup olmadığını kontrol etmemiz gerekiyor.
+
+InnerHTML İLE ÇALIŞTIRDIĞIM DA SUBSCRIBE YAZARKEN BOŞLUK BIRAKIRSAM DÜZGÜN ÇALIŞMAYACAKTIR.
+SEBEBİ KOSULDA BUTTONELEMENT'IN BOŞLUK İÇERMEMESİ. EŞİT KABUL ETMEZ VE DÜZGÜN ÇALIŞMAZ.
+INNERTEXT KULLANIRSAM BOSLUK OLSA DAHİ SADECE TEXT'E BAKACAGINDAN CALISIR.
+
+
+<p>YouTube Subscribe Button</p>
+    <button onclick="
+    const buttonElement = document.querySelector('.js-subscribe-button');
+
+    if(buttonElement.innerText === 'Subscribe' ) {
+        buttonElement.innerText = 'Subscribed' ;
+    } else {
+        buttonElement.innerText = 'Subscribe';
+    }
+    
+    " class="js-subscribe-button">Subscribe</button>
+
+Kodun daha düzgün gözükmesi için fonksiyon oluşturacağız bunları yaptıktan sonra.
+Fonksiyonun çalışması için button içinde çağırdık.
+-->
+    <style>
+
+        .subscribe-button {
+            border-radius: 50px;
+            height: 30px;
+            border: none;
+            background-color: black;
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            
+
+        }
+
+        .is-subscribed {
+            background-color: rgb(218, 218, 218);
+            color: black;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+
+  <!--Bir elemanın birden fazla sınıfı olabilir. Diğer sınıfı JS için kullandığımız için CSS için farklı bir sınıf tanımladık.-->
+
+
+    
+    <p>YouTube Subscribe Button</p>
+    <button onclick="
+     Subscribe();
+    " class="js-subscribe-button subscribe-button">Subscribe</button>
+
+
+    <script>
+
+        function Subscribe () {
+
+            const buttonElement = document.querySelector('.js-subscribe-button');
+
+            if(buttonElement.innerText === 'Subscribe' ) {
+                buttonElement.innerText = 'Subscribed' ;
+                buttonElement.classList.add('is-subscribed');
+            } else {
+                buttonElement.innerText = 'Subscribe';
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
