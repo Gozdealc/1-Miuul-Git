@@ -40,3 +40,22 @@
 
 
 }
+
+/* border border-radius */
+
+#div_id {
+    background-color: black;
+    color: orange;
+    padding: 25px;
+    margin-bottom: 30px;
+    /* border-radius: 30px; */
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 3px;
+    border: 3px solid blueviolet;
+    /* border-radius: 2px 50px 15px 100px; */
+    /* border-radius: 10px 59px; Saat yönünden etki ediyor bu şekilde yazınca ilki sol üst, sağ alt - 
+    ikincisi sağ üst, sol alt. */
+    border-top-left-radius: 100px;
+
+}
