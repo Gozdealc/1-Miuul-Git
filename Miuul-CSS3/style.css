@@ -59,6 +59,7 @@
     border-top-left-radius: 100px;
 
 }
+/* TEXT */
 
 #parag_id_2 {
 
@@ -76,4 +77,29 @@
   letter-spacing: 10px;
   text-shadow: 10px 10px 10px red;
   
+}
+/* COLUMN COUNT */
+
+.column-container {
+    column-count: 3;
+    /* Sütunların arasında ki mesafe; */
+    column-gap: 200px; 
+    column-rule: 2px solid blue;
+    text-transform: capitalize;
+    text-align: justify;
+
+}
+
+/* LINE CLAMP */
+
+.line_clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    
+    /* DİĞER TARAYICILAR DA DESTEKLENMESİ İÇİN */
+    display: -moz-box;
+    -moz-line-clamp: 5;
+    -moz-box-orient: vertical;
 }
