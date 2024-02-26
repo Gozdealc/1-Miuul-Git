@@ -1,0 +1,26 @@
+/* p {
+    background-color: black;
+}
+
+#parag_id {
+    background-color: aqua;
+}
+
+.parag_class {
+    background-color: blueviolet;
+} */
+
+
+#parag_id {
+    color: red;
+    color: #ff0000;
+    color: rgb(red, 0, 0);
+    color: hsl(0, 100%, 50%);
+    color: hsla(0, 100%, 50%, 0.9);
+
+    background-color: blueviolet !important;
+    background-color: black;
+
+
+
+}
