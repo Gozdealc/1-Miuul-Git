@@ -59,3 +59,21 @@
     border-top-left-radius: 100px;
 
 }
+
+#parag_id_2 {
+
+  font-family: "Kode Mono", monospace;
+  background-color: black;
+  color: orange;
+  font-size: 10px;
+  font-weight: 200px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2;
+  word-spacing: 15px;
+  padding: 20px;
+  letter-spacing: 10px;
+  text-shadow: 10px 10px 10px red;
+  
+}
