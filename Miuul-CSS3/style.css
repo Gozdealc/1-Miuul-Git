@@ -232,3 +232,51 @@ body{
 font-size: calc(2em + 10px);
 /* 20px * 2 + 10 = 50px */
 }
+
+/* IMAGE */
+#image_id {
+    background-image: url('./images.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* HEADER */
+
+header{
+    background-image: url('./images\ \(1\).jpg');
+    width: 60%;
+    height: 75vh;
+    background-size:cover;
+    background-position: center;
+}
+
+/* LINEAR GRADIENT */
+#linear_gradient_id {
+    background: linear-gradient(to right, rgb(224, 224, 224), purple);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+
+}
+
+/* FLOAT EXAMPLES */
+
+.float_examples {
+    float: right;
+    margin-left: 10px;
+}
+/* CLEARFIX */
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* CLEARPATH */
+#clear_path_id {
+    background-color: orange;
+    min-height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+}
