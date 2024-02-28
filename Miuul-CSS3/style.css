@@ -153,3 +153,66 @@
     transform: translate(10px,20px);
     transform: skew(10deg,20deg);
 }
+
+
+.miuul_display {
+    /* display: none ;
+    visibility: hidden; (Gizliyor ama yer de kaplıyor.) 
+    visibility: visible; (Tekrardan görünür yapmak için.) */
+    display: inline;
+    display: inline-block;
+    border: 5px solid gray;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    /* BOX-SIZING > WIDTH 200 VERDİK ANCAK BORDER VE PADDING ILE ARTIYOR,BU SEBEPLE BORDER-BOX ÖZELLİĞİ KULLANIRIZ. 
+    METIN ALTA GEÇMEZ */
+    
+}
+/* LİST */
+.menu {
+    overflow: hidden;
+    background-color: gray;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu a{
+    display: block;
+    color: white ;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+/* TABLE */
+
+.custom_table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+
+.custom_table td, .custom_table th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.custom_table thead {
+    background-color: rgb(175, 175, 175)
+
+}
+
+.custom_table tbody tr:nth-child(even) {
+    background-color: rgb(143, 143, 143);
+}
