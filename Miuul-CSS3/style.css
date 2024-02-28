@@ -280,7 +280,7 @@ header{
     min-height: 300px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
 }
-/* SELECTOR */
+/* SELECTOR
 p {
     font-size: 1rem !important;
 }
@@ -301,7 +301,7 @@ div + p {
 }
 /* DIV'DEN SONRA Kİ P ARKAPLANI YEŞİL OLSUN ANLAMINA GELİR. */
 
-div ~ p {
+/* div ~ p {
     background-color: aqua;
 }
  li:nth-child(odd) {
@@ -322,4 +322,62 @@ div ~ p {
  }
  a:active {
     background-color: red;
+ }  */
+
+ .responsive_design {
+    background-color: chocolate;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+ }
+
+  @media (min-width:100px) and (max-width:768px) {
+
+    .responsive_design {
+        background-color: chocolate;
+        color: white;
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        display: block;
+        margin-bottom: 10px;
+     }
+
+ }
+
+ @media (min-width:769px) and (max-width:991px) {
+
+    .responsive_design {
+        background-color: rebeccapurple;
+        color: white;
+        width: 49%;
+        display: inline-block;
+
+     }
+
+ }
+ @media (min-width:992px) and (max-width:1199px) {
+
+    .responsive_design {
+        background-color: yellow;
+        color: white;
+        width: 32%;
+        display: inline-block;
+
+     }
+
+ }
+ @media (min-width:1200px) {
+
+    .responsive_design {
+        background-color: green;
+        color: white;
+        width: 24%;
+        display: inline-block;
+
+     }
+
  }
