@@ -216,3 +216,19 @@
 .custom_table tbody tr:nth-child(even) {
     background-color: rgb(143, 143, 143);
 }
+
+/* html {
+    font-size: 16px;
+} */
+
+/* body yazdıkysak em html yazdıysak rem */
+body{
+ font-size: 20px;
+}
+
+#parag6 {
+/* font-size: 2rem; */
+/* font-size: 2em; */
+font-size: calc(2em + 10px);
+/* 20px * 2 + 10 = 50px */
+}
